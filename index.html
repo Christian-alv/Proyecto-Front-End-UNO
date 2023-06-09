@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shorcut icon" href="img/icono.png">
+
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+    
+   
+    
+    <title>Christian Gaston Alvarado</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about-me">Sobre Mi</a></li>
+                <li><a href="#technologies">Tecnologías</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <span id="home"></span>
+    <br>
+    <main class="main-container">
+        <h1>Desarrollador Frontend</h1>
+        <img id="img-profile" src="img/img-perfil.png" alt="Foto de perfil">
+        <hr id="about-me" class="hr-1">
+        <section  class="about-me-container">
+            <h2  class="about-me-title">Sobre Mi</h2>
+            <p class="p-main">¡Hola! Soy Christian Alvarado, tengo 26 años y soy      desarrollador frontend. 
+            Tengo experiencia en HTML, CSS, JavaScript y en la creación de aplicaciones web responsivas y accesibles. Además, siempre estoy aprendiendo nuevas tecnologías y herramientas para estar al día en las últimas tendencias del desarrollo web.</p>
+        </section>
+    </main>
+
+    <span id="technologies"></span>
+    <section class="tec-container">
+        <h2 class="tec-title">Tecnologías</h2>
+        <figure class="tec-img-container">
+            <img class="img-html" src="img/img-html.png" alt="Icono de archivo HTML">
+            <img class="img-css" src="img/img-css.png" alt="Icono de archivo CSS">
+            <img class="img-js" src="img/img-js.png" alt="Icono de archivo JS">
+        </figure>
+    </section>
+
+    <span id="portfolio"></span>
+    <section class="port-container">
+        <h2 class="port-title">Portafolio</h2>
+        <aside class="page-container">
+            <div><h3 class="page-title"><a href="#">Página 1</a></h3><iframe src=""></iframe></div>
+            <div><iframe src=""></iframe><h3 class="page-title"><a href="#">Página 2</a></h3></div>
+            <div><h3 class="page-title"><a href="#">Página 3</a></h3><iframe src=""></iframe>></div>
+            <div><iframe src=""></iframe><h3 class="page-title"><a href="#">Página 4</a></h3></div>
+        </aside>
+    </section>
+
+    <span id="contact"></span>
+    <section class="cont-container">
+        <h2 class="cont-title">Contacto</h2>
+        <div class="tel-container">
+            <label class="tel-num" for="tel-num">Teléfono</label><br>
+            <input type="tel" name="tel-num" id="tel-num" value="+541112345678" readonly>
+        </div>
+            <h3 class="redes-title">Redes</h3>
+            <div class="img-redes">  
+                <a href="https://www.instagram.com/"><img src="img/instagram-icon.png" alt=""></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><img src="img/gmail-icon.png" alt=""></a>
+                <a href="https://www.facebook.com/"><img src="img/facebook-icon.png" alt=""></a>
+                <a href="https://www.whatsapp.com/?lang=es"><img src="img/whatsapp-icon.png" alt=""></a>
+            </div>
+            <form id="cont-form" class="cont-form" name="formulario">
+
+                <label class="form-title">Déjame un mensaje</label>
+
+                <input id="nombre" type="text" placeholder="Nombre"><br>
+                <span id="error-nombre" class="text-danger" ></span>
+
+                <input id="email" type="email" placeholder="Email"><br>
+                <span id="error-email" class="text-danger"></span>
+
+                <input id="asunto" type="text" placeholder="Asunto"><br>
+                
+                <input id="moneda" type="text" list="monedas" value="ARS" disabled>
+
+                <input id="sueldo" type="number" name="sueldo" placeholder="Sueldo Mínimo"><br>
+                <span id="error-sueldo" class="text-danger"></span>
+
+                <textarea id="textarea" name="mensaje" placeholder="Mensaje"></textarea><br>
+                <span id="error-form-vacio" class="text-danger"></span>
+                
+            </form>
+            <button id="submit">Enviar</button>
+            
+          
+    </section>
+    <section id = 'form-data'>
+        
+
+    </section>
+    <footer class="footer">
+        <p class="p-footer">Copyright © 2023 Alvarado Christian S.A.</p>
+    </footer>
+
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="code.js"></script>
+    
+</body>
+</html>

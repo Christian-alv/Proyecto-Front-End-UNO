@@ -1,0 +1,416 @@
+/*declaracion de variables*/
+
+:root{
+    --background-section-color: rgba(0, 0, 0, 0.8);
+    --background-input: rgba(0, 0, 0, 0.1);
+    --text-color:#fff;
+}
+
+/*estilos generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;;
+}
+
+/*estilos del <body>*/
+
+body{
+    background-image:url(img/fondo.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/*estilos de las <a>*/
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 10px 0px;
+    color: var(--text-color);
+}
+
+/*estilos de la barra de navegacion*/
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    height: 100px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li:hover{
+    opacity: 0.7;
+}
+
+/*estilos del <main> */
+
+.main-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 1px 50%;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: var(--background-section-color);
+}
+
+h1{
+    padding: 20px 0 0 50px;
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 130px;
+    color: var(--text-color);
+}
+
+#img-profile{
+    grid-row: 1;
+    grid-column: 2;
+    margin: 120px 0 0 100px;
+    filter: drop-shadow(0 0 10px );
+}
+
+.hr-1{
+    width: 90%;
+    margin: auto;
+    color: var(--text-color);
+    grid-row: 2;
+    grid-column: 1 / 3;
+    margin-top: 80px;
+}
+
+.about-me-container{
+    grid-row: 3;
+    grid-column: 1 / 3;
+    width: 50%;
+    margin: auto;
+    margin-top: 250px;
+    padding-bottom: 200px;
+}
+
+.about-me-title{
+    font-size: 50px;
+    text-align: center;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.p-main{
+    font-size: 30px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/*estilos de la sección "tecnologías"*/
+
+.tec-container{
+    background-color: var(--background-section-color);
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+    height: 500px;
+}
+
+.tec-title{
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.tec-img-container{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 220px 220px 220px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.img-html{
+    margin: 30px;
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    filter:drop-shadow(30px 20px 4px black);
+}
+
+.img-css{
+    margin:30px;
+    grid-column: 2;
+    height: 100px;
+    width: 100px;
+    filter:drop-shadow(30px 20px 4px black);
+}
+
+.img-js{
+    margin: 30px;
+    grid-column: 3;
+    height: 100px;
+    width: 100px;
+    filter:drop-shadow(30px 20px 4px black);
+}
+
+/*estilos de la sección portafolio*/
+
+.port-container{
+    background-color: var(--background-section-color);
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.port-title{
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.page-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 250px;
+    margin-top: 50px;   
+    padding-bottom: 100px;
+}
+
+aside div{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title{
+    color: var(--text-color);
+    font-size: 30px;
+    box-shadow: 0px 1px 10px black;
+    margin: 0 10px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+.page-title:hover{
+    height: 50px ;
+    width: 150px;
+}
+
+aside{
+    padding-top: 50px;
+}
+
+aside div iframe{
+    height: 200px;
+    width: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+    background-color: rgba(23, 23, 70, 0.8);
+    filter: blur(1px);
+    
+    position: absolute;
+}
+
+/*estilos de la sección contacto*/
+
+.cont-container{
+    background-color: var(--background-section-color);
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 30px 0 200px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4 , 100px) ;
+}
+
+.cont-title{
+    color: var(--text-color);
+    grid-column: 1 / 3;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.tel-container{
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 50px;
+}
+
+.tel-num{
+    color: var(--text-color);
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+#tel-num{
+    background-color: var(--background-input);
+    color: var(--text-color);
+    border: none;
+    font-size: 20px;
+    margin: 10px 0 0 70px;
+}
+
+.redes-title{
+    color: var(--text-color);
+    font-size: 25px;
+    margin: 50px 0 0 50px;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.img-redes{
+    margin-left: 70px;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.cont-form{
+    grid-row: 2;
+    grid-column: 2;
+    margin: 50px 0 0 50px;
+}
+
+.form-title{
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.cont-form input{
+    background-color: var(--background-input);
+    border: 1px solid var(--text-color);
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#moneda{
+    color: #fff;
+    border: 1px solid var(--text-color);
+    height: 30px;
+    padding: 5px;
+    width: 80px;
+}
+
+#sueldo{
+    width: 213px;
+}
+
+#textarea{
+    height: 70px;
+    background-color: var(--background-input);
+    border: 1px solid var(--text-color);
+    width: 300px;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--text-color);
+    margin-top: 10px;
+    resize: none;
+}
+
+#submit{
+    width: min-content;
+    background-color: var(--background-input);
+    border: 1px solid var(--text-color);
+    height: 30px;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--text-color);
+    grid-row: 2;
+    grid-column: 2;
+    margin: 420px 0 0 50px;
+}
+
+#submit:hover{
+    opacity: 0.5;
+}
+
+/* #error-form-vacio{
+    margin: 375px 0 0 50px;
+    color: red;
+
+}  */
+/* #error-nombre{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+} */
+/* #error-email{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+} */
+/* #error-sueldo{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+/*estilos del <footer>*/
+
+.footer{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.p-footer{
+    color: var(--text-color);
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+/*seccion adicional con la info del form*/
+
+#form-data{
+    background-color: var(--background-section-color);
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: max-content;
+}
+
+#p-data{
+    display: block;
+    width: 100%;
+    padding: 30px;
+    font-size: 15px;
+    color: black;
+
+}
